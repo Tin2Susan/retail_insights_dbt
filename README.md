@@ -1,8 +1,8 @@
-# 🛒 Retail Insights Pipeline using dbt + BigQuery
+# Retail Insights Pipeline using dbt + BigQuery
 
 This project showcases an end-to-end data pipeline for generating actionable retail insights from Instacart's open dataset using modern data tools like **dbt**, **SQL**, and **BigQuery**.
 
-## 🚀 Project Overview
+## Project Overview
 
 The goal is to build a modern analytics pipeline that:
 - Loads raw retail data into BigQuery
@@ -11,7 +11,7 @@ The goal is to build a modern analytics pipeline that:
 - Produces insights such as customer behavior, product trends, and order patterns
 - Can be extended to dashboards or predictive models later
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 | Tool        | Purpose                          |
 |-------------|----------------------------------|
@@ -19,19 +19,19 @@ The goal is to build a modern analytics pipeline that:
 | **BigQuery**| Cloud data warehouse             |
 | **SQL**     | Data analysis and transformation |
 | **GitHub**  | Version control                  |
-| *(Optional)*| Looker Studio or Power BI        | Dashboards (to be added later) |
+|             | Looker Studio or Power BI        | Dashboards (to be added later) |
 
-## 📁 Project Structure
+## Project Structure
 
 
-## 📊 Sample Insights (Planned)
+## Sample Insights (Planned)
 - Top-selling products and aisles
 - Order volume trends by hour/day
 - Repeat purchase behavior
 - Average basket size per user
 - Product affinity (users who bought X also bought Y)
 
-## 🗃️ Dataset
+## Dataset
 
 Source: [Instacart Market Basket Analysis](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis)
 
@@ -39,14 +39,14 @@ Source: [Instacart Market Basket Analysis](https://www.kaggle.com/datasets/pspar
 - 50,000 unique products
 - User–product order history
 
-## 🧱 Data Modeling Approach
+## Data Modeling Approach
 
 Using **dbt's layered architecture**:
 - `staging/`: Clean, rename, and standardize raw tables
 - `intermediate/`: Join and enrich data
 - `marts/`: Business-ready models for KPIs and reporting
 
-## ✅ Current Progress
+## Current Progress
 
 - [x] GitHub + dbt project initialized  
 - [x] Folder structure created  
@@ -54,13 +54,6 @@ Using **dbt's layered architecture**:
 - [ ] dbt models created and tested  
 - [ ] dbt docs generated  
 - [ ] Dashboards (planned)
-
-## 📌 To Run Locally
-
-```bash
-# Set up virtual environment
-python -m venv env
-env\Scripts\activate  # Windows
 
 # Install dbt for BigQuery
 pip install dbt-bigquery
